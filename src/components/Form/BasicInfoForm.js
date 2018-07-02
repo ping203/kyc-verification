@@ -74,7 +74,7 @@ class BasicInfoForm extends Component {
 		const { inputError } = this.state;
 
 		return(
-			<div className="container">
+			<div className={`container ${styles.containerPage}`}>
 				<h2 className={styles.title}>Basic Information</h2>
 				<div className={`form-group ${styles.group}`}>
 					<label className={styles.formLabel}>Name <span>*</span></label>

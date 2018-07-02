@@ -65,14 +65,14 @@ class Preview extends React.Component {
 		this.setState({ showNotification: true, profileCompletionPercentage: profileCompletionPercentage });
 		setTimeout(() => {
 			this.setState({ showNotification: false });
-		}, 10000)	
+		}, 7000)	
 	}
 
 	render() {
 		const { basicUserInfoVault, userKycVault, bankAccountsVault, updateStep } = this.props;
 		const { showNotification, profileCompletionPercentage } = this.state;
 		return(
-			<div className={`container ${styles.previewPage}`}>
+			<div className={`container ${styles.containerPage}`}>
 				{
 					showNotification && 
 					<div className="alert alert-success">

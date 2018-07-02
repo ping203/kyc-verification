@@ -64,7 +64,7 @@ class UserKycFrom extends Component {
 		const { userKycVault: { profilePic, aadhar, pan, passport }, updateStep } = this.props;
 		const { inputError } = this.state;
 		return(
-				<div className="container">
+				<div className={`container ${styles.containerPage}`}>
 					<div className="row">
 						<UploadKycDoc 
 							title='Upload Photo'
