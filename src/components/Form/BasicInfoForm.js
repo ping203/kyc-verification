@@ -61,7 +61,7 @@ class BasicInfoForm extends Component {
 		} else if(R.isEmpty(userEmail)) {
 			const userEmailError = 'Please Enter Your Email'
 			this.setState({ inputError: { ...this.state.inputError, userEmailError} });
-		} else if(R.isEmpty(userEmail)) {
+		} else if(R.isEmpty(userPanNo)) {
 			const panError = 'Please Enter Your PAN'
 			this.setState({ inputError: { ...this.state.inputError, panError} });
 		} else if(R.isEmpty(this.state.inputError)) {
