@@ -18,21 +18,21 @@ class UserKycFrom extends Component {
 	handleNextStep = () => {
 		const { userKycVault: { profilePic, aadhar, pan, passport }, updateStep } = this.props;
 
-		// if(R.isEmpty(profilePic)) {
-		// 	const profilePicError = 'Please Upload Your Photo'
-		// 	this.setState({ inputError: { ...this.state.inputError, profilePicError} });
-		// } else if(R.isEmpty(aadhar)) {
-		// 	const aadharError = 'Please Upload Your AADHAR photo'
-		// 	this.setState({ inputError: { ...this.state.inputError, aadharError} });
-		// } else if(R.isEmpty(pan)) {
-		// 	const panError = 'Please Upload Your PAN photo'
-		// 	this.setState({ inputError: { ...this.state.inputError, panError} });
-		// } else if(R.isEmpty(passport)) {
-		// 	const passportError = 'Upload Your Passport photo'
-		// 	this.setState({ inputError: { ...this.state.inputError, passportError} });
-		// } else if(R.isEmpty(this.state.inputError)) {
+		if(R.isEmpty(profilePic)) {
+			const profilePicError = 'Please Upload Your Photo'
+			this.setState({ inputError: { ...this.state.inputError, profilePicError} });
+		} else if(R.isEmpty(aadhar)) {
+			const aadharError = 'Please Upload Your AADHAR photo'
+			this.setState({ inputError: { ...this.state.inputError, aadharError} });
+		} else if(R.isEmpty(pan)) {
+			const panError = 'Please Upload Your PAN photo'
+			this.setState({ inputError: { ...this.state.inputError, panError} });
+		} else if(R.isEmpty(passport)) {
+			const passportError = 'Upload Your Passport photo'
+			this.setState({ inputError: { ...this.state.inputError, passportError} });
+		} else if(R.isEmpty(this.state.inputError)) {
 			this.props.updateStep('next');
-		// }
+		}
 	}
 
 	handleInputErrors = (doc) => {

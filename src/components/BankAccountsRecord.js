@@ -19,11 +19,11 @@ class BankAccountsRecord extends Component {
 
 	handleNextStep = () => {
 		const { bankAccountsVault, updateStep } = this.props;
-		// if(R.isEmpty(bankAccountsVault)) {
-		// 	this.setState({ inputError: 'Please Add Atleast One Bank Account Details'});
-		// } else if(R.isEmpty(this.state.inputError)) {
+		if(R.isEmpty(bankAccountsVault)) {
+			this.setState({ inputError: 'Please Add Atleast One Bank Account Details'});
+		} else if(R.isEmpty(this.state.inputError)) {
 			this.props.updateStep('next');
-		// }
+		}
 	}
 
 	clearError = () => {
