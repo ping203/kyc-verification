@@ -27,7 +27,6 @@
     },
     "setupTestFrameworkScriptFile": "<rootDir>/src/test/setup.js"
   },
-  "author": "We're in <wereinhq.com>",
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "^8.0.1",
